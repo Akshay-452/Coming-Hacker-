@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Premium Contact Form</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:
+    linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1600&auto=format&fit=crop');
+    background-size:cover;
+    background-position:center;
+}
+
+.container{
+    width:400px;
+    padding:35px;
+    border-radius:20px;
+    background:rgba(255,255,255,0.1);
+    backdrop-filter:blur(12px);
+    border:1px solid rgba(255,255,255,0.2);
+    box-shadow:0 8px 32px rgba(0,0,0,0.3);
+    color:white;
+}
+
+.container h2{
+    text-align:center;
+    margin-bottom:25px;
+    font-size:32px;
+    font-weight:600;
+}
+
+.input-box{
+    margin-top:18px;
+}
+
+.input-box input,
+.input-box textarea{
+    width:100%;
+    padding:14px;
+    border:none;
+    outline:none;
+    border-radius:12px;
+    background:rgba(255,255,255,0.15);
+    color:white;
+    font-size:15px;
+}
+
+.input-box input::placeholder,
+.input-box textarea::placeholder{
+    color:#ddd;
+}
+
+textarea{
+    resize:none;
+    height:120px;
+}
+
+button{
+    width:100%;
+    margin-top:22px;
+    padding:14px;
+    border:none;
+    border-radius:12px;
+    background:#00bfff;
+    color:white;
+    font-size:17px;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.03);
+    background:#0099cc;
+}
+
+.footer{
+    text-align:center;
+    margin-top:18px;
+    font-size:13px;
+    color:#ddd;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <h2>Get In Touch</h2>
+
+    <form action="https://formspree.io/f/xdajjojn" method="POST"> 
+
+        <div class="input-box">
+            <input type="text" name="name" placeholder="Enter Your Name" required>
+        </div>
+
+        <div class="input-box">
+            <input type="email" name="email" placeholder="Enter Your Email" required>
+        </div>
+
+        <div class="input-box">
+            <input type="text" name="phone" placeholder="Phone Number" required>
+        </div>
+
+        <div class="input-box">
+            <textarea name="message" placeholder="Write Your Message"></textarea>
+        </div>
+
+        <button type="submit">Send Message</button>
+
+    </form>
+
+    <div class="footer">
+        Designed By Akshay Prajapati
+    </div>
+
+</div>
+
+</body>
+</html>
